@@ -1,3 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 header {
+    text-align: center;
+}
+
+#right{
+    padding: 10px;
+    margin-right: auto;
+}
+
+#left {
+    margin-left: 10%;
+    padding: 10px;
+    width: 40%;
+}
+
+footer {
+    margin-top: auto;
+    padding: 40px;
     text-align: center;
 }
