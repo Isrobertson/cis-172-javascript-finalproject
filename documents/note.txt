@@ -1,0 +1,7 @@
+-- notes to self --
+
+* Create a webpage the first page being about me and myself a litte.
+
+        then after that the homepage should link to the other pages one
+        being about my hobbies or skills and the other elaborating about
+        my career goal or etc
