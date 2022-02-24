@@ -12,6 +12,7 @@ body {
 
 main {
     text-align: center;
+    margin-top: 50px;
 }
 
 header {
@@ -40,6 +41,7 @@ nav{
     padding: 10px;
     margin-right: 10%;
     background-color: lightgray;
+    text-align: left;
 }
 
 #left {
