@@ -1,14 +1,13 @@
 // simple javascript for adding text between pages
-const pTag = ["<p>", "</p>"];
-const liTag = ["<li>", "</li>"];
-
 var footer = document.getElementById("footer");
-var stringBuilder = [];
+
+const liTag = ["<li>", "</li>"];
+var text = "";
 
 // sets text between all footers
 function setFooters()
 {
-    footer.innerHTML = "<p>" + "Hello Footer" + "</p>";
+    footer.innerHTML = "Hello Footer";
 }
 
 setFooters();
