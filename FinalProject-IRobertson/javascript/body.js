@@ -7,5 +7,4 @@ function setFooters()
     footer.innerHTML = "Hello Footer";
 }
 
-setNavBar();
 setFooters();
