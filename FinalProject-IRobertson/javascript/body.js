@@ -4,7 +4,7 @@ var footer = document.getElementById("footer");
 // sets text between all footers
 function setFooters()
 {
-    footer.innerHTML = "Hello Footer";
+    footer.innerHTML = "website by Ian S. Robertson";
 }
 
 setFooters();
