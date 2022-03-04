@@ -60,12 +60,20 @@ nav{
     padding: 50px;
     max-width: fit-content;
     max-height: fit-content;
-    height: 100px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
 }
 
 #athleteInput input {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#athleteOutput {
+    background-color: lightgray;
 }
 
 footer {
