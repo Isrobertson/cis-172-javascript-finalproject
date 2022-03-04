@@ -48,6 +48,24 @@ nav{
     margin-right: auto;
     padding: 10px;
     width: 30%;
+    background-color: darkgray;
+}
+
+#athleteInput-div {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(183, 206, 207);
+    padding: 50px;
+    max-width: fit-content;
+    max-height: fit-content;
+    height: 100px;
+}
+
+#athleteInput-div input {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 footer {
