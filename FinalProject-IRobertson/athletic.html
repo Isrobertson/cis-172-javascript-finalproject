@@ -24,21 +24,21 @@
     <main>
         <h2>Runner page with athlete function</h2>
         <p>calculate your Milege</p>
-        <div id="container">
-            <form>
-                <fieldset id="athleteInput">
-                    <label for="miles">Enter how many miles you ran.</label>
-                    <input type="text" id="miles" name="miles">
-                    <input type="button" id="submit" name="submit" value="Calculate">
-        
-                    <script src="javascript/athletic.js"></script> <!-- this is for calculating miles run or any exercise -->
-                </fieldset>
-                <fieldset id="athleteOutput">
-
-                </fieldset>  
-            </form>
-            
-        </div>
+        <form id="container">
+            <fieldset id="athleteInput">
+                <label for="miles">Enter how many miles you ran.</label>
+                <input type="text" id="miles" name="miles">
+                <label for="weight">Enter your weight in lb's</label>
+                <input type="text" id="weight" name="weight">
+                <label for="incline" id="incline" name="incline"></label>
+                <input type="text" id="incline" name="incline">
+                <input type="button" id="submit" name="submit" value="Calculate">
+            </fieldset>
+            <fieldset id="athleteOutput">
+                <h3 id="aOutput"></h3>
+            </fieldset>
+            <script src="javascript/athletic.js"></script> <!-- this is for calculating miles run or any exercise -->
+        </form>
         
     </main>
 
