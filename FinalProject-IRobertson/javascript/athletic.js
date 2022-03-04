@@ -9,13 +9,17 @@ var isPR = 0;   // PR (Personal Record)
 function getUserData()
 {
     milesRan = document.getElementById("miles").value;
-    
-    console.log(milesRan);
+
 }
 
 function calculateTotalMiles()
 {
 
+}
+
+function outputData()
+{
+    
 }
 
 // call functions
