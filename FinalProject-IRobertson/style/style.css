@@ -51,7 +51,7 @@ nav{
     background-color: darkgray;
 }
 
-#athleteInput-div {
+#athleteInput {
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -63,7 +63,7 @@ nav{
     height: 100px;
 }
 
-#athleteInput-div input {
+#athleteInput input {
     margin-top: 10px;
     margin-bottom: 10px;
 }
