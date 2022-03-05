@@ -20,7 +20,7 @@ function setNavbar()
 // sets text between all footers
 function setFooters()
 {
-    footer.innerHTML = "website by Ian S. Robertson";
+    footer.innerHTML = "Website by: Ian Robertson";
 }
 
 //setNavbar();
