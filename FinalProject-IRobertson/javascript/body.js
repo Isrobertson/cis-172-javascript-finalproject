@@ -23,9 +23,6 @@ function setFooters()
     footer.innerHTML = "Website by: Ian Robertson";
 }
 
-//setNavbar();
-//setFooters();
-
 // page loader handler for functions
 if(window.addEventListener) {
     window.addEventListener("load", setNavbar, false);
