@@ -10,6 +10,8 @@ body {
     flex-direction: row-reverse;
 }
 
+
+
 main {
     text-align: center;
     margin-top: 20px;
@@ -86,4 +88,20 @@ footer {
     margin-top: auto;
     padding: 40px;
     text-align: center;
+}
+
+/* section below is for game */
+
+#canvas {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 400px;
+}
+
+#game {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(143, 194, 211), rgb(250, 250, 250));
 }
