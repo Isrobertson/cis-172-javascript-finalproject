@@ -23,14 +23,17 @@
         <form id="container2">
             <div id="athleteInput">
                 <label for="miles">Enter how many miles you ran.</label>
-                <input type="text" id="miles" name="miles">
+                <input type="text" class="form-control" id="miles" name="miles">
                 <label for="weight">Enter your weight in lb's</label>
-                <input type="text" id="weight" name="weight">
-                <label for="incline" id="incline" name="incline"></label>
-                <input type="text" id="incline" name="incline">
-                <input type="button" id="submit" name="submit" value="Calculate">
+                <input type="text" class="form-control" id="weight" name="weight">
+                <label for="duration">Enter Run Duration</label>
+                <input type="text" class="form-control" id="duration" name="duration">
+                <input type="button" id="aSubmit" name="aSubmit" value="Calculate">
             </div>
             <div id="athleteOutput">
+                <!-- this div is where the data is outputted after calculating. -->
+                <ul id="output">
+                </ul>
                 <h3 id="aOutput"></h3>
             </div>
             <script src="javascript/athletic.js"></script> <!-- this is for calculating miles run or any exercise -->
