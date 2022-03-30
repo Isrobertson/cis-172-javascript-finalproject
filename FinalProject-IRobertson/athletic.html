@@ -20,8 +20,8 @@
     <main>
         <h2>Runner page with athlete function</h2>
         <p>calculate your Milege</p>
-        <form id="container2">
-            <div id="athleteInput">
+        <div id="container2">
+            <form id="athleteInput" action="athlete">
                 <label for="miles">Enter how many miles you ran.</label>
                 <input type="text" class="form-control" id="miles" name="miles">
                 <label for="weight">Enter your weight in lb's</label>
@@ -29,16 +29,16 @@
                 <label for="duration">Enter Run Duration</label>
                 <input type="text" class="form-control" id="duration" name="duration">
                 <input type="button" id="aSubmit" name="aSubmit" value="Calculate">
-            </div>
+            </form>
             <div id="athleteOutput">
                 <!-- this div is where the data is outputted after calculating. -->
                 <ul id="output">
+                    <li></li>
                 </ul>
                 <h3 id="aOutput"></h3>
             </div>
-            <script src="javascript/athletic.js"></script> <!-- this is for calculating miles run or any exercise -->
-        </form>
-        
+        </div>
+        <script src="javascript/athletic.js"></script> <!-- this is for calculating miles run or any exercise -->
     </main>
 
     <footer></footer>
