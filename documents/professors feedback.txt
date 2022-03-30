@@ -1,0 +1,9 @@
+ 	
+
+Thanks for uploading your website and showing me what you have done so far.
+
+Now, it is time to add tasks # 1, 2, and 3:
+
+Add a page JavaScript function. The function should perform a mathematical calculation based on user input. 
+
+Add content using decision statements. Add functionality created by a series of if, if/else, and/or else if statements
