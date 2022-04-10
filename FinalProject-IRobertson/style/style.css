@@ -99,9 +99,8 @@ nav{
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-    width: 400px;
+    width: 500px;
     max-height: fit-content;
-    background-color: lightgray;
 }
 
 footer {
@@ -144,11 +143,31 @@ footer {
     height: 60px;
 }
 
+.radio-div {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.radio-div div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
 .form-label {
     margin-bottom: 10px;
 }
 
 .form-control {
     margin-bottom: 20px;
+}
+
+.input-margins {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
