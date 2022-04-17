@@ -23,7 +23,7 @@
         <div id="container2">
             <form id="athleteInput" action="athlete" novalidate>
                 <label for="miles">Enter how many miles you ran.</label>
-                <input type="text" class="form-control" id="miles" name="miles">
+                <input type="number" class="athlete-input" id="miles" name="miles">
                 <div class="radio-div">
                     <div>
                         <label for="mph">mph</label>
@@ -35,10 +35,11 @@
                     </div>
                 </div>
                 <label for="weight">Enter your weight in lb's</label>
-                <input type="text" class="form-control" id="weight" name="weight">
+                <input type="number" class="athlete-input" id="weight" name="weight">
                 <label for="duration">Enter Run Duration</label>
-                <input type="text" class="form-control" id="duration" name="duration">
+                <input type="number" class="athlete-input" id="duration" name="duration">
                 <input type="button" id="submit-form" name="Submit" value="Calculate">
+                <input type="button" id="clear-form" name="clear-form" value="Clear">
             </form>
             <div id="athleteOutput">
                 <!-- this div is where the data is outputted after calculating. -->
