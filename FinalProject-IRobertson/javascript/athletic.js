@@ -1,18 +1,27 @@
 // Athletic javascript file
 // by: Ian Robertson
 
+'use strict';
+
 var totalDistance = 0;
 var caloriesBurned = 0;
 var isPR = 0;   // PR (Personal Record)
 var voTwoMax = 0;
 var radioBtns = document.getElementsByClassName("radio_btn");
+var mphType = true;
 radioBtns[0].checked = true; // auto checks default at start
 
 function validateInput()
 {
     var form = document.getElementsByTagName("form")[0];
     var inputFields = form.getElementsByTagName("input");
-    var isValid = false;
+    var isValid = true;
+
+    if(inputFields[0].value === "" || inputFields[2].value === "" || inputFields[3].value === "") {
+        isValid = false;
+    }
+
+    console.log(isValid); // debug
 
     // checks if all form
     if(isValid === true) {
@@ -35,11 +44,14 @@ function calculateData()
 
 function calculateMiles()
 {
+    // calculates for if miles is selected
+
     return 0;
 }
 
 function calculateKilometers()
 {
+    // calculate if kilometers is selected
     return 0;
 }
 
