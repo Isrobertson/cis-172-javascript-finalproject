@@ -127,6 +127,43 @@ footer {
     height: 100%;
 }
 
+#character {
+    width: 30px;
+    height: 60px;
+    background-color: red;
+    border-style: solid;
+    border-width: 2px;
+    position: relative;
+    top: 338px;
+    left: 140px;
+    animation: jump 650ms infinite linear;
+}
+
+@keyframes jump {
+    0%{top: 338px;}
+    35%{top: 220px;}
+    50%{top: 200px;}
+    75%{top: 215px;}
+    100%{top: 338px;}
+}
+
+#obstacle {
+    width: 15px;
+    height: 80px;
+    background-color: rgb(84, 147, 81);
+    border-style: solid;
+    border-width: 2px;
+    position: relative;
+    top: 254px;
+    left: 782px;
+    animation: obstacle 1.5s infinite linear;
+}
+
+@keyframes obstacle {
+    0%{left:782px;}
+    100%{left:-40px;}
+}
+
 /* contact me */
 
 #contactme {
