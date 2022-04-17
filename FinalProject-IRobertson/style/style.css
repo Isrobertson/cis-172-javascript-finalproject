@@ -136,13 +136,16 @@ footer {
     position: relative;
     top: 338px;
     left: 140px;
-    animation: jump 650ms infinite linear;
+}
+
+.animate {
+    animation: jump 600ms linear;
 }
 
 @keyframes jump {
     0%{top: 338px;}
     35%{top: 220px;}
-    50%{top: 200px;}
+    45%{top: 200px;}
     75%{top: 215px;}
     100%{top: 338px;}
 }
@@ -156,12 +159,15 @@ footer {
     position: relative;
     top: 254px;
     left: 782px;
+}
+
+.oAnimate {
     animation: obstacle 1.5s infinite linear;
 }
 
 @keyframes obstacle {
     0%{left:782px;}
-    100%{left:-40px;}
+    100%{left:-5px;}
 }
 
 /* contact me */
