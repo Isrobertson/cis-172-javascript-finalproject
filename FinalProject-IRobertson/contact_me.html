@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html> 
 <head>
+    <!--
+        Name: Ian Robertson
+        Date: 4/17/2022
+        Description: contact me for submitting a form like an email.
+    -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/style.css">
@@ -9,25 +14,29 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to my website!</h1>
+        <h1>Contact me!</h1>
         <h4>by: Ian S. Robertson</h4>
         <nav>
-            <ul class="navbar">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="athletic.html">Athletic</a></li>
-                <li>Major</li>
-                <li>Contact me</li>
-            </ul>
+            <!-- navbar contents are retrieved from body.js -->
+            <ul class="navbar"></ul>
         </nav>
     </header>
 
-    <main id="home">
-        <form id="contact-me">
-            <!-- Enter contact info form here -->
+    <main>
+        <h3 id="wrapper">Contact me via Email!</h3>
+        <!-- Enter contact info form here -->
+        <form action="contact-me-form" method="POST" id="contactme">
+            <div id="container">
+                <label for="email" class="form-label">Enter Email</label>
+                <input type="text" class="form-control" id="email" required>
+                <label for="message" class="form-label">Enter your message</label>
+                <input type="text" class="form-control" id="message" required>
+                <input type="submit" id="submitEmail" name="submitContactInfo" value="Send">
+            </div>
         </form>
     </main>
 
-    <footer id="footer"></footer>
+    <footer></footer>
     <script src="javascript/body.js"></script>
 </body>
 </html>
