@@ -3,65 +3,65 @@
 
 'use strict';
 
-var totalDistance = 0;
+var distance;
+var weight;
+var duration;
+var velocity;
 var caloriesBurned = 0;
 var isPR = 0;   // PR (Personal Record)
 var voTwoMax = 0;
-var radioBtns = document.getElementsByClassName("radio_btn");
-radioBtns[0].checked = true; // auto checks default at start
+var inputFields = document.getElementsByClassName("athlete-input");
 
 function validateInput()
 {
-    var form = document.getElementsByTagName("form")[0];
-    var inputFields = form.getElementsByTagName("input");
     var isValid = true;
 
-    if(inputFields[0].value === "" || inputFields[2].value === "" || inputFields[3].value === "") {
-        isValid = false;
+    for(var i = 0; i < inputFields.length; i++) {
+        if(inputFields[i].value === "") {
+            isValid = false;
+        }
     }
 
-    console.log(isValid); // debug
+    console.log(inputFields); // debug
 
     // checks if all form
     if(isValid === true) {
+        getInput();
         calculateData();
         outputData();
     } else {
-        window.alert("Please enter all input fields!");
+        window.alert("Please enter all input fields correctly!");
     }
 }
 
+function getInput() 
+{
+    distance = inputFields[0].value;
+    weight = inputFields[1].value;
+    duration = inputFields[2].value;
+    
+}
 function calculateData()
 {
     // calculates based on what distance type is selected
-    if(radioBtns[0].checked === true) {
-        totalDistance = calculateMiles();
-    } else if(radioBtns[1].checked === true) {
-        totalDistance = calculateKilometers();
-    }
-}
-
-function calculateMiles()
-{
-    // calculates for if miles is selected
-
-    return 0;
-}
-
-function calculateKilometers()
-{
-    // calculate if kilometers is selected
-    return 0;
+    const MET = 7.0;
+    velocity = distance / (duration / 60);
+    console.log(velocity + " mph");
+    caloriesBurned = (MET * weight * 3.5) / 200;
+    caloriesBurned *= duration;
+    outputData();
 }
 
 function outputData()
 {
+    var outputFields = document.getElementsByClassName("outputFields");
 
+    outputFields[0].value = velocity + " mph";
+    outputFields[1].value = caloriesBurned;
 }
 
 function clearFields()
 {
-    var inputFields = document.getElementsByClassName("athlete-input");
 
     for(var i = 0; i < inputFields.length; i++) {
         inputFields[i].value = "";
