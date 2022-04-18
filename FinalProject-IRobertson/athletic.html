@@ -30,16 +30,6 @@
             <form id="athleteInput" action="athlete" novalidate>
                 <label for="miles">Enter how many miles you ran.</label>
                 <input type="number" class="athlete-input" id="miles" name="miles">
-                <div class="radio-div">
-                    <div>
-                        <label for="mph">mph</label>
-                        <input type="radio" class="radio_btn" id="mph" name="radio">
-                    </div>
-                    <div>
-                        <label for="kph">kph</label>
-                        <input type="radio" class="radio_btn" id="kph" name="radio">
-                    </div>
-                </div>
                 <label for="weight">Enter your weight in lb's</label>
                 <input type="number" class="athlete-input" id="weight" name="weight">
                 <label for="duration">Enter Run Duration</label>
@@ -50,10 +40,12 @@
             <div id="athleteOutput">
                 <!-- this div is where the data is outputted after calculating. -->
                 <div class="input-margins">
+                    <label for="avgSpeed">average speed</label>
+                    <input type="text" class="outputFields" id="avgSpeed" name="avgSpeed" readonly>
                     <label for="calories">Calories burned</label>
-                    <input type="text" id="calories" name="calories" readonly>
+                    <input type="text" class="outputFields" id="calories" name="calories" readonly>
                     <label for="VO2-max">VO2 max</label>
-                    <input type="text" id="VO2-max" name="VO2-max" readonly>
+                    <input type="text" class="outputFields" id="VO2-max" name="VO2-max" readonly>
                 </div>
                 <h3 id="aOutput"></h3>
             </div>
