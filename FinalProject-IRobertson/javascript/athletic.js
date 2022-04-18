@@ -8,7 +8,6 @@ var caloriesBurned = 0;
 var isPR = 0;   // PR (Personal Record)
 var voTwoMax = 0;
 var radioBtns = document.getElementsByClassName("radio_btn");
-var mphType = true;
 radioBtns[0].checked = true; // auto checks default at start
 
 function validateInput()
@@ -60,14 +59,30 @@ function outputData()
 
 }
 
-function buttonEventListener()
+function clearFields()
+{
+    var inputFields = document.getElementsByClassName("athlete-input");
+
+    for(var i = 0; i < inputFields.length; i++) {
+        inputFields[i].value = "";
+    }
+}
+
+function submitEventListener()
 {
     var submitForm = document.getElementById("submit-form");
+    var clearButton = document.getElementById("clear-form");
 
     if(submitForm.addEventListener) {
         submitForm.addEventListener("click", validateInput, false);
     } else if(submitForm.attachEvent) {
         submitForm.attachEvent("onclick", validateInput, false);
+    }
+
+    if(clearButton.addEventListener) {
+        clearButton.addEventListener("click", clearFields, false);
+    } else if(clearButton.attachEvent) {
+        clearButton.attachEvent("onclick", clearFields);
     }
 }
 
@@ -75,7 +90,7 @@ function buttonEventListener()
 
 function createEventListeners()
 {
-    buttonEventListener();
+    submitEventListener();
 }
 
 if(window.addEventListener) {
