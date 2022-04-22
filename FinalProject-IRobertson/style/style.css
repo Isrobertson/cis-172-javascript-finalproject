@@ -127,6 +127,21 @@ footer {
     height: 100%;
 }
 
+#score {
+    position: relative;
+    float: left;
+    text-align: left;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin-left: 25px;
+    margin-top: 15px;
+    font-family: consolas;
+}
+
+#score h3 {
+    margin: 0px;
+}
+
 #character {
     width: 30px;
     height: 60px;
@@ -182,8 +197,9 @@ footer {
 }
 
 #message {
+    height: 100px !important;
     width: 400px;
-    height: 60px;
+    resize: none;
 }
 
 .radio-div {
