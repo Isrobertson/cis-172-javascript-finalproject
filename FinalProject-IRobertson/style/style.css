@@ -209,6 +209,7 @@ footer {
     margin-right: auto;
     padding: 15px;
     border-style: solid;
+    background-color: rgb(231, 231, 231);
 }
 
 #message {
