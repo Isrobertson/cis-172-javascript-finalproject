@@ -26,6 +26,7 @@
     <main>
         <h2>Runner page with athlete function</h2>
         <p>calculate your Milege</p>
+        <h4>remember. this is only a close estimate!</h4>
         <div id="container2">
             <form id="athleteInput" action="athlete" novalidate>
                 <label for="miles">Enter how many miles you ran.</label>
@@ -40,12 +41,10 @@
             <div id="athleteOutput">
                 <!-- this div is where the data is outputted after calculating. -->
                 <div class="input-margins">
-                    <label for="avgSpeed">average speed</label>
+                    <label for="avgSpeed"><h3>average speed</h3></label>
                     <input type="text" class="outputFields" id="avgSpeed" name="avgSpeed" readonly>
-                    <label for="calories">Calories burned</label>
+                    <label for="calories"><h3>Calories burned</h3></label>
                     <input type="text" class="outputFields" id="calories" name="calories" readonly>
-                    <label for="VO2-max">VO2 max</label>
-                    <input type="text" class="outputFields" id="VO2-max" name="VO2-max" readonly>
                 </div>
                 <h3 id="aOutput"></h3>
             </div>
